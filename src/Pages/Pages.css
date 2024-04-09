@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 /* LOGIN PAGE */
 .login{
@@ -156,12 +157,25 @@
     opacity: 0.7;
 }
 .hp-11-img{
-    height: 50vh;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #D9D9D9;
+    margin-left: -10vw; /* Adjust the margin-right property */
+}
+@keyframes rotateImage {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+.hp-11-img img {
+    height: 40vh; /* Adjust height as needed */
+    width: 40%; /* Maintain aspect ratio */
+    animation: rotateImage 10s linear infinite; /* Adjust duration as needed */
 }
 .mark{
     height: 20vh;
@@ -170,7 +184,7 @@
 .marquee{
     height: 15vh;
     width: 20vw;
-    border: 5px solid black;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -186,8 +200,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    align-items: center;
-    background-color:#D9D9D9;    
+    align-items: center;  
 }
 .principle{
     background-color: #D9D9D9;
@@ -204,17 +217,39 @@
 .carousel .slider-wrapper{
     height: 80vh;
     width: 80%;
-}
-.slider-card{
-    border-radius: 40px;
-    background-color: silver;
-    height: 60vh;
-    width: 80%;
-    margin-top: -22vh;
-    margin-left: 8vw;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.slider-card{
+    border-radius: 40px;
+    height: 60vh;
+    width: 80%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+}
+.slider-card-title{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.slider-card-title h2{
+    font-size: 1.25rem;
+}
+.slider-card-content{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 /* SESSIONS */
@@ -266,4 +301,39 @@
 }
 .s-title h2{
     font-size: 4rem;
+}
+.s-content{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.s-box{
+    height: 70vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.s-footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.s-social{
+    height: 10vh;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.s-social h2{
+    font-size: 1rem;
+}
+.s-social img{
+    height: 6vh;
+    cursor: pointer;
 }
