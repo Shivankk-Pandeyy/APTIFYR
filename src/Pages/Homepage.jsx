@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import Header from "../Components/Header"
-import React, { Component } from "react";
+import React from "react";
 import './Pages.css'
 import Marquee from "react-fast-marquee";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -12,15 +11,20 @@ import insta from "./INSTA.png"
 import fb from "./FACEBOOK.png"
 import lk from "./LINKED.png"
 import mail from "./MAIL.png";
+import Spline from '@splinetool/react-spline';
+import Mouse from "./Mouse";
 const HomePage = () => {
   return  (
     <>
     <Header/>
+    <Mouse/>
+    <div>
     <div className="SOCIAL">
     <img src={insta} alt="INSTAGRAM" title="INSTAGRAM"></img>
     <img src={fb} alt="FACEBOOK" title="FACEBOOK"></img>
     <img src={lk} alt="LINKEDIN" title="LINKEDIN"></img>
     <img src={mail} alt="MAIL" title="MAIL"></img>
+    </div>
     </div>
     <div className="hp-1">
     <div className="hp-11">
@@ -30,7 +34,8 @@ const HomePage = () => {
     </div>
     </div>
     <div className="hp-11">
-    <div className="hp-11-img"></div>
+    <div className="hp-11-img spline-background">
+    <Spline scene="https://prod.spline.design/Jf3rMvoYCs0hSOFe/scene.splinecode" /></div>
     </div>
     </div>
     <Marquee speed={150} loop={0} pauseOnClick className="mark"> 
@@ -80,21 +85,46 @@ const HomePage = () => {
     </div>
     <div className="sessions">
     <h2>Our Latest Sessions</h2>
-    <Carousel interval={1800} className="caro" infiniteLoop={true} autoPlay={true} showArrows={false} showIndicators={true} showThumbs={true} stopOnHover={true} width={"90vw"} centerMode={true} autoFocus={true} centerSlidePercentage={100}>
+    <Carousel interval={1800} className="caro" infiniteLoop={true} autoPlay={true} showArrows={false} showIndicators={true} showThumbs={true} stopOnHover={true} width={"95vw"} centerMode={true} autoFocus={true} centerSlidePercentage={70}>
     <div className="slider-card">
-        <p>SESSION 1</p>
+        <div className="slider-card-title">
+        <h2>SESSIONS TITLE 1</h2>
+        </div>
+        <div className="slider-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
     <div className="slider-card">
-        <p>SESSION 2</p>
+        <div className="slider-card-title">
+        <h2>SESSIONS TITLE 2</h2>
+        </div>
+        <div className="slider-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
     <div className="slider-card">
-        <p>SESSION 3</p>
+        <div className="slider-card-title">
+        <h2>SESSIONS TITLE 3</h2>
+        </div>
+        <div className="slider-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
     <div className="slider-card">
-        <p>SESSION 4</p>
+        <div className="slider-card-title">
+        <h2>SESSIONS TITLE 4</h2>
+        </div>
+        <div className="slider-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
     <div className="slider-card">
-        <p>SESSION 5</p>
+        <div className="slider-card-title">
+        <h2>SESSIONS TITLE 5</h2>
+        </div>
+        <div className="slider-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
 </Carousel>
     </div>
@@ -127,6 +157,102 @@ const HomePage = () => {
     </div>
     </div>
     </div>
+    <div className="skills">
+    <div className="s-title">
+    <h2>TECHNOLOGY</h2>
+    </div>
+    <div className="s-content">
+    <div className="s-box">
+    <h2>IMAGE</h2>
+    </div>
+    <div className="s-box">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </h2>
+    </div>
+    </div>
+    <div className="s-footer">
+    <div className="s-social">
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>hello@skillbridge.com</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>+91 7389288618</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>Somewhere in the World</h2>
+    </div>
+    </div>
+    </div>
+    <div className="skills">
+    <div className="s-title">
+    <h2>CONTENT</h2>
+    </div>
+    <div className="s-content">
+    <div className="s-box">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </h2>
+    </div>
+    <div className="s-box">
+    <h2>IMAGE</h2>
+    </div>
+    </div>
+    <div className="s-footer">
+    <div className="s-social">
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>hello@skillbridge.com</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>+91 7389288618</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>Somewhere in the World</h2>
+    </div>
+    </div>
+    </div>
+    <div className="skills">
+    <div className="s-title">
+    <h2>BUISNESS</h2>
+    </div>
+    <div className="s-content">
+    <div className="s-box">
+    <h2>IMAGE</h2>
+    </div>
+    <div className="s-box">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </h2>
+    </div>
+    </div>
+    <div className="s-footer">
+    <div className="s-social">
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>hello@skillbridge.com</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>+91 7389288618</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>Somewhere in the World</h2>
+    </div>
+    </div>
+    </div>
+    <div className="skills">
+    <div className="s-title">
+    <h2>PERSONALITY</h2>
+    </div>
+    <div className="s-content">
+    <div className="s-box">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </h2>
+    </div>
+    <div className="s-box">
+    <h2>IMAGE</h2>
+    </div>
+    </div>
+    <div className="s-footer">
+    <div className="s-social">
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>hello@skillbridge.com</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>+91 7389288618</h2>
+    <img src={fb} alt="FACBOOK"></img>
+    <h2>Somewhere in the World</h2>
+    </div>
+    </div>
+    </div>    
     </>
   )
 }
