@@ -1,36 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family:conthrax;
+    src: url('./conthrax.otf');
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family:conthrax,sans-serif;
     text-align: center;
+
 }
 /* LOGIN PAGE */
 .login{
-    height: 100vh;
+    height: 92vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #110423;
+    color: white;
 }
 .login-1{
-    height: 100vh;
+    height: 92vh;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #FFFFFF;
 }
 .login-1 h2{
     font-size: 2.5rem;
-    color: #433737;
+    color: white;
 }
 .login-1 p{
     font-size: 1.25rem;
-    color: #433737;
+    color: white;
 }
 .login-info{
     height: 20vh;
@@ -63,17 +69,21 @@
     color: black;
     font-size: 1.1rem;
     border-radius: 40px;
-    background-color: #9EA38D;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 .login-1 form button:nth-child(1){
     height: 10vh;
     width: 10vw;
-    color: white;
+    color: #110243;;
     font-size: 1.1rem;
     border-radius: 40px;
-    background-color: #383030;
+    color: #110243;
     /* 383030 */
+}
+button{
+    background-color: white;
+    color: #110243;
 }
 .login-1 form button:hover{
     opacity: 0.8;
@@ -94,9 +104,15 @@
     cursor: pointer;
 }
 .login-2{
-    height: 100vh;
+    height: 92vh;
     width: 50%;
-    background-color: #D9D9D9;
+    background-color: #110423;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login-2 img{
+    height: 80vh;
 }
 /* HOMEPAGE */
 .SOCIAL{
@@ -120,6 +136,9 @@
     transform: rotate(360deg);
 }
 .hp-1{
+    /* background-color: #852cff; */
+    background-color: #110423;
+    background-image: linear-gradient(to bottom, #110423, #181333, #221d45, #2b2858, #34336b);
     height: 92vh;
     width: 100%;
     display: flex;
@@ -144,6 +163,7 @@
 }
 .hp-11-content h2{
     font-size: 3rem;
+    color: white;
 }
 .hp-11 button{
     height: 8vh;
@@ -157,8 +177,8 @@
     opacity: 0.7;
 }
 .hp-11-img{
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -178,41 +198,67 @@
     animation: rotateImage 10s linear infinite; /* Adjust duration as needed */
 }
 .mark{
-    height: 20vh;
-    width: 100%;
+    height: 10vh;
+    width: 40vw;
+    background-color: #110423;
 }
-.marquee{
-    height: 15vh;
-    width: 20vw;
-    border: 2px solid black;
+.M-container{
+    height: 10vh;
+    width: 100%;
+    background-color: #110423;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 2vw;
+}
+.M{
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.marquee{
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10vw;
 }
 .marquee img{
-    height: 15vh;
+    height: 8vh;
+    width: 100%;
 }
 /* PRINICPLE */
+span{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #852cff;
+}
 .slider{
+
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
+    background-color: #852cff;
+    background-color: #110423;
 }
 .principle{
-    background-color: #D9D9D9;
-    height: 40vh;
+    height: 20vh;
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 40px;
-    background-color: silver;
     margin-left: 1vw;
+}
+.principle h2{
+    font-size: 3rem;
+    color: white;
 }
 .carousel .slider-wrapper{
     height: 80vh;
@@ -225,13 +271,101 @@
 .slider-card{
     border-radius: 40px;
     height: 60vh;
+    width: 50%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -2vw;
+    border-radius: 0;
+    padding: 1vh;
+    background-image: url('HOL.jpg');
+    background-size:100% 100%;
+    opacity: 0.6;
+    /* //margin-right: 20vw; */
+}
+.slider-card1{
+    border-radius: 40px;
+    height: 60vh;
+    width: 50%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -2vw;
+    border-radius: 0;
+    padding: 1vh;
+    background-image: url('WORK.jpg');
+    background-size:100% 100%;
+    opacity: 0.6;
+    font-weight: 600;
+    /* //margin-right: 20vw; */
+}
+.slider-card2{
+    border-radius: 40px;
+    height: 60vh;
+    width: 50%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -2vw;
+    border-radius: 0;
+    padding: 1vh;
+    background-image: url('HOP.jpg');
+    background-size:100% 100%;
+    opacity: 0.6;
+    /* //margin-right: 20vw; */
+}
+.slider-card3{
+    border-radius: 40px;
+    height: 60vh;
+    width: 50%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -2vw;
+    border-radius: 0;
+    padding: 1vh;
+    background-image: url('EE.jpeg');
+    background-size:100% 100%;
+    opacity: 0.6;
+    /* //margin-right: 20vw; */
+}
+.slider-card4{
+    border-radius: 40px;
+    height: 60vh;
+    width: 50%;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -2vw;
+    border-radius: 0;
+    padding: 1vh;
+    background-image: url('CE.jpg');
+    background-size:100% 100%;
+    opacity: 0.6;
+    /* //margin-right: 20vw; */
+}
+.slider-card-1{
+    border-radius: 40px;
+    height: 60vh;
     width: 80%;
     margin-left: 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border: 2px solid black;
+    border: 2px solid white;
+    /* margin-left: -2vw; */
+    /* //margin-right: 20vw; */
 }
 .slider-card-title{
     height: 10vh;
@@ -241,7 +375,15 @@
     justify-content: space-evenly;
 }
 .slider-card-title h2{
+    margin-top: 2vh;
+    font-size:2rem;
+    color: white;
+    opacity: 1;
+}
+.slider-card-content p{
     font-size: 1.25rem;
+    color: white;
+    opacity: 1;
 }
 .slider-card-content{
     height: 50vh;
@@ -254,6 +396,7 @@
 
 /* SESSIONS */
 .sessions{
+    background-color: #110423;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -263,6 +406,10 @@
 }
 .sessions h2{
     font-size: 3rem;
+    color: white;
+}
+.sessions p{
+    color: white;
 }
 /* SKILLS */
 .skills{
@@ -272,35 +419,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #110423;
+    color: white;
 }
 .skills-1{
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.skills-11{
-    height: 40vh;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.skills-image{
-    height: 35vh;
-    width: 60%;
-    background-color: #D9D9D9;
-}
-.s-title{
     height: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+.skills-11{
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skills-image{
+    height: 10vh;
+}
+.skills-image img{
+    height: 10vh;
+}
+.s-title{
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .s-title h2{
     font-size: 4rem;
+    color: white;
 }
 .s-content{
     height: 70vh;
@@ -315,6 +466,9 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.s-box img{
+    height: 50vh;
 }
 .s-footer{
     height: 10vh;
@@ -336,4 +490,8 @@
 .s-social img{
     height: 6vh;
     cursor: pointer;
+}
+button{
+    background-color: white;
+    color: #110243;
 }
